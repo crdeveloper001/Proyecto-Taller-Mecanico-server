@@ -31,7 +31,7 @@ public class ContactInfoServices implements IContactRequest {
         mailSender.setHost("smtp.gmail.com");
         mailSender.setPort(587);
         mailSender.setUsername("servicioautomotrizchaconcr@gmail.com");
-        mailSender.setPassword("jeffbesos2022.");
+        mailSender.setPassword("TallerChacon2023.");
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtpout");
         props.put("mail.smtpout.auth", "true");
