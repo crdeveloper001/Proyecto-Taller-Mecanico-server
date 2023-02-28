@@ -1,3 +1,0 @@
-[env]
-  MY_SPECIAL_ENV = "some_value"
-  MAX_PLAYER_COUNT = "15"
