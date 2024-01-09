@@ -12,7 +12,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection="Inventory")
 public class InventoryDTO {
 
-
     @JsonProperty("_id")
     private int _id;
     @JsonProperty("Nombre")

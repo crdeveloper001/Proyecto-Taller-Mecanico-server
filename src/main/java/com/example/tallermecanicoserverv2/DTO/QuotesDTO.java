@@ -16,7 +16,6 @@ import java.util.Date;
 @Document(collection="Quotes")
 public class QuotesDTO {
 
-
     @JsonProperty("_id")
     private int _id;
     @JsonProperty("Tipo")

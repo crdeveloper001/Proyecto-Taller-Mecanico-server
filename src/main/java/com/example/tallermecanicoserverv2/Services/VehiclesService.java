@@ -13,14 +13,11 @@ public class VehiclesService implements IVehicles {
 
     @Autowired
     private VehiclesRepositories service;
-
     public VehiclesService(VehiclesRepositories repo) {
         this.service = repo;
     }
-
     public VehiclesService() {
     }
-
     @Override
     public List<VehiclesDTO> GetVehicles() {
         try {
@@ -59,11 +56,8 @@ public class VehiclesService implements IVehicles {
     public String AddVehicles(VehiclesDTO vehicle) {
         try {
             if (vehicle != null) {
-
                 service.save(vehicle);
-
                 return "Vehiculo Agregado";
-
             } else {
                 return "Verifique los datos ingresados";
             }
