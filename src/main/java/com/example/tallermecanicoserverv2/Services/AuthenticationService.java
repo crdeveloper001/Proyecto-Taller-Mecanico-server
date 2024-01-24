@@ -15,21 +15,17 @@ public class AuthenticationService implements IAuthentication {
     @Autowired
     private UsersRepositories service;
     @Override
-    public String AuthUser(AuthenticationDTO credentiales) {
+    public String AuthUser(AuthenticationDTO credentials) {
 
-        List<UsersDTO> RegistroUsuariosList = new ArrayList<UsersDTO>();
+        List<UsersDTO> registroUsuariosList = service.findAll();
 
-        RegistroUsuariosList.add((UsersDTO) service.findAll());
-
-        for (int i = 0; i < RegistroUsuariosList.size(); i++) {
-
-            if (RegistroUsuariosList.get(i).getCorreoElectronico() == credentiales.getEmail() && RegistroUsuariosList.get(i).getClaveAcceso() == credentiales.getPassword()){
+        for (UsersDTO user : registroUsuariosList) {
+            if (user.getCorreoElectronico().equals(credentials.getEmail()) &&
+                    user.getClaveAcceso().equals(credentials.getPassword())) {
                 return "Usuario Autenticado";
-
-            }else{
-                return "usuario incorrecto, vuelvalo a intentar";
             }
         }
-        return "Ocurrio un error en el servidor, no se pudo autenticar";
+
+        return "Usuario incorrecto, vuelva a intentar";
     }
 }
