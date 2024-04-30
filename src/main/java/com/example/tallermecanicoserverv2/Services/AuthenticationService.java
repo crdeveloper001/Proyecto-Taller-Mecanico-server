@@ -22,10 +22,10 @@ public class AuthenticationService implements IAuthentication {
         for (UsersDTO user : registroUsuariosList) {
             if (user.getCorreoElectronico().equals(credentials.getEmail()) &&
                     user.getClaveAcceso().equals(credentials.getPassword())) {
-                return "Usuario Autenticado";
+                return "Authorized";
             }
         }
 
-        return "Usuario incorrecto, vuelva a intentar";
+        return "Unauthorized";
     }
 }
