@@ -1,6 +1,8 @@
 package com.example.tallermecanicoserverv2.Controllers;
 
 import com.example.tallermecanicoserverv2.DTO.AuthenticationDTO;
+import com.example.tallermecanicoserverv2.DTO.PayloadAuthenticationDTO;
+import com.example.tallermecanicoserverv2.DTO.UsersDTO;
 import com.example.tallermecanicoserverv2.Services.AuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,7 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(allowedHeaders = "*",origins = "*")
+@CrossOrigin(allowedHeaders = "*", origins = "*")
 @RequestMapping("api/v1/Authorization")
 public class AuthorizationController {
 
@@ -17,8 +19,19 @@ public class AuthorizationController {
 
     @PostMapping()
     @ResponseBody
-    public ResponseEntity<?> PostAuthentication(@RequestBody AuthenticationDTO web_credentials){
+    public ResponseEntity<?> PostAuthentication(@RequestBody AuthenticationDTO web_credentials) {
 
-        return new ResponseEntity<>(service.AuthUser(web_credentials), HttpStatus.OK);
+        PayloadAuthenticationDTO response = service.AuthUser(web_credentials);
+
+        switch (response.getAuth_Key()) {
+            case "USER_AUTHORIZED":
+                return new ResponseEntity<PayloadAuthenticationDTO>(response, HttpStatus.OK);
+
+            case "USER_NOT_FOUND":
+                return new ResponseEntity<PayloadAuthenticationDTO>(response, HttpStatus.BAD_REQUEST);
+
+        }
+        return null;
+
     }
 }
