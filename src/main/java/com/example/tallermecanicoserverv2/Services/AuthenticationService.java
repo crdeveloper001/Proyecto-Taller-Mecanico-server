@@ -8,7 +8,6 @@ import com.example.tallermecanicoserverv2.Repositories.UsersRepositories;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -24,12 +23,12 @@ public class AuthenticationService implements IAuthentication {
             if (user.getCorreoElectronico().equals(credentials.getEmail())
                     && user.getClaveAcceso().equals(credentials.getPassword())) {
                         
-                currentPayload.setAuth_Key("USER_AUTHORIZED");
+                currentPayload.setAuth_key("USER_AUTHORIZED");
                 currentPayload.setPayload(user);
                 return currentPayload;
             }
         }
-        currentPayload.setAuth_Key("USER_NOT_FOUND");
+        currentPayload.setAuth_key("USER_NOT_FOUND");
         currentPayload.setPayload(null);
         return currentPayload;
 

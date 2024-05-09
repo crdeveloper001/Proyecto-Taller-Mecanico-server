@@ -2,7 +2,6 @@ package com.example.tallermecanicoserverv2.Controllers;
 
 import com.example.tallermecanicoserverv2.DTO.AuthenticationDTO;
 import com.example.tallermecanicoserverv2.DTO.PayloadAuthenticationDTO;
-import com.example.tallermecanicoserverv2.DTO.UsersDTO;
 import com.example.tallermecanicoserverv2.Services.AuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -23,12 +22,13 @@ public class AuthorizationController {
 
         PayloadAuthenticationDTO response = service.AuthUser(web_credentials);
 
-        switch (response.getAuth_Key()) {
+        switch (response.getAuth_key()) {
             case "USER_AUTHORIZED":
+                response.getPayload().setClaveAcceso("");
                 return new ResponseEntity<PayloadAuthenticationDTO>(response, HttpStatus.OK);
 
             case "USER_NOT_FOUND":
-                return new ResponseEntity<PayloadAuthenticationDTO>(response, HttpStatus.BAD_REQUEST);
+                return new ResponseEntity<PayloadAuthenticationDTO>(response, HttpStatus.NOT_FOUND);
 
         }
         return null;
