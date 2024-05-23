@@ -22,6 +22,12 @@ public class ClientsDTO {
     private String correo;
     @JsonProperty("Telefono")
     private int telefono;
-
-
+    @JsonProperty("Address")
+    private String address;
+    @JsonProperty("City")
+    private String city;
+    @JsonProperty("State")
+    private String state;
+    @JsonProperty("Zipcode")
+    private int zipcode;
 }
