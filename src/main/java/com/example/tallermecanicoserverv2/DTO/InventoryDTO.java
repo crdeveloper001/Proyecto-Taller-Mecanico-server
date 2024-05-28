@@ -14,12 +14,17 @@ public class InventoryDTO {
 
     @JsonProperty("_id")
     private int _id;
-    @JsonProperty("Nombre")
-    private String nombre;
-    @JsonProperty("Fabricante")
-    private String Fabricante;
-    @JsonProperty("Cantidad")
-    private int Cantidad;
-    @JsonProperty("Disponibilidad")
-    private String Disponibilidad;
+
+    @JsonProperty("Name")
+    private String name;
+
+    @JsonProperty("Manufacturer")
+    private String manufacturer;
+
+    @JsonProperty("Quantity")
+    private int quantity;
+
+    @JsonProperty("Availability")
+    private String availability;
+
 }

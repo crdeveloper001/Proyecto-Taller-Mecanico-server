@@ -14,16 +14,16 @@ public class ClientsDTO {
 
     @JsonProperty("_id")
     private int _id;
-    @JsonProperty("Nombre")
+    @JsonProperty("Name")
     private String nombre;
-    @JsonProperty("Apellidos")
+    @JsonProperty("Surname")
     private String apellidos;
-    @JsonProperty("Correo")
+    @JsonProperty("Email")
     private String correo;
-    @JsonProperty("Telefono")
+    @JsonProperty("Phone")
     private int telefono;
-    @JsonProperty("Address")
-    private String address;
+    @JsonProperty("CurrentAddress")
+    private String currentAddress;
     @JsonProperty("City")
     private String city;
     @JsonProperty("State")

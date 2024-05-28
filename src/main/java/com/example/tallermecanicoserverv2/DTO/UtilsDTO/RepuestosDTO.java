@@ -12,10 +12,13 @@ import lombok.Setter;
 @NoArgsConstructor
 public class RepuestosDTO {
 
-    @JsonProperty("Repuesto")
-    private String Repuesto;
-    @JsonProperty("Cantidad")
-    private int Cantidad;
-    @JsonProperty("Precio")
-    private int Precio;
+    @JsonProperty("Part")
+    private String part;
+
+    @JsonProperty("Quantity")
+    private int quantity;
+
+    @JsonProperty("Price")
+    private int price;
+
 }

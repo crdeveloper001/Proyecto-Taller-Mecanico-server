@@ -7,8 +7,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class AuthenticationDTO {
-
-   
-    private String email;
-    private String password;
+    @JsonProperty("Email")
+    private String Email;
+    @JsonProperty("Password")
+    private String Password;
 }

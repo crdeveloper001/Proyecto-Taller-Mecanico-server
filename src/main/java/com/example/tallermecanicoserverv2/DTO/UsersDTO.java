@@ -14,20 +14,28 @@ public class UsersDTO {
 
     @JsonProperty("_id")
     private int _id;
-    @JsonProperty("Nombre")
-    private String Nombre;
-    @JsonProperty("Apellidos")
-    private String Apellido;
-    @JsonProperty("Telefono")
-    private int Telefono;
-    @JsonProperty("CorreoElectronico")
-    private String CorreoElectronico;
-    @JsonProperty("ClaveAcceso")
-    private String ClaveAcceso;
-    @JsonProperty("CargoActual")
-    private String CargoActual;
-    @JsonProperty("Rol")
-    private String Rol;
+
+    @JsonProperty("Name")
+    private String Name;
+
+    @JsonProperty("Surname")
+    private String Surname;
+
+    @JsonProperty("Phone")
+    private int Phone;
+
+    @JsonProperty("CurrentEmail")
+    private String Email;
+
+    @JsonProperty("CurrentPassword")
+    private String Password;
+
+    @JsonProperty("CurrentPosition")
+    private String CurrentPosition;
+
+    @JsonProperty("Role")
+    private String Role;
+
 
 
 }

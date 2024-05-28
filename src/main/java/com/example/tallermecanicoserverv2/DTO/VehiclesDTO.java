@@ -14,16 +14,23 @@ public class VehiclesDTO {
 
     @JsonProperty("_id")
     private int _id;
-    @JsonProperty("Marca")
-    private String Marca;
-    @JsonProperty("Tipo")
-    private String Tipo;
-    @JsonProperty("Cilindraje")
-    private int Cilindraje;
-    @JsonProperty("PlacaRegistral")
-    private String PlacaRegistral;
-    @JsonProperty("PropietarioActual")
-    private ClientsDTO PropietarioActual;
-    @JsonProperty("EstadoActual")
-    private String EstadoActual;
+
+    @JsonProperty("Brand")
+    private String Brand;
+
+    @JsonProperty("Type")
+    private String Type;
+
+    @JsonProperty("EngineCapacity")
+    private int EngineCapacity;
+
+    @JsonProperty("RegistrationPlate")
+    private String RegistrationPlate;
+
+    @JsonProperty("CurrentOwner")
+    private ClientsDTO CurrentOwner;
+
+    @JsonProperty("CurrentState")
+    private String CurrentState;
+
 }

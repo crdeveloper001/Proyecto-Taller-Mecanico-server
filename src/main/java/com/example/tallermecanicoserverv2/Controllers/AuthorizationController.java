@@ -24,7 +24,7 @@ public class AuthorizationController {
 
         switch (response.getAuth_key()) {
             case "USER_AUTHORIZED":
-                response.getPayload().setClaveAcceso("");
+                response.getPayload().setPassword("");
                 return new ResponseEntity<PayloadAuthenticationDTO>(response, HttpStatus.OK);
 
             case "USER_NOT_FOUND":

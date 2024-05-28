@@ -64,16 +64,16 @@ public class ContactInfoServices implements IContactRequest {
             SimpleMailMessage message = new SimpleMailMessage();
             message.setFrom("servicioautomotrizchaconcr@gmail.com");
             message.setTo("servicioautomotrizchaconcr@gmail.com");
-            message.setSubject("Solicitud de informacion proveniente de: "+request.getNombre());
-            message.setText("Hola, el sistema ha recibido un nuevo correo del cliente: "+request.getNombre()+"\n"+"" +
+            message.setSubject("Solicitud de informacion proveniente de: "+request.getName());
+            message.setText("Hola, el sistema ha recibido un nuevo correo del cliente: "+request.getName()+"\n"+"" +
                     "Adjunto al sistema, viene la siguiente informacion: "+"\n"+"_____________________________________________________________"+"\n" +
-                    "Nombre del Cliente: "+request.getNombre()+"\n"+
-                    "Apellidos: "+request.getCorreoElectronico()+"\n"+
-                    "Numero de Telefono: "+request.getTelefono()+"\n"+
+                    "Nombre del Cliente: "+request.getName()+"\n"+
+                    "Apellidos: "+request.getEmail()+"\n"+
+                    "Numero de Telefono: "+request.getPhone()+"\n"+
                     "----------------------------------------- ------------------------------------------");
             mailSender.send(message);
             SendContactInfoEmail(request);
-            return "Muchas gracias por contactanos! "+request.getNombre()+ "su informacion ha sido recibida, de igual forma, lo invitamos a usar nuestro chat publico en nuestro sitio web";
+            return "Muchas gracias por contactanos! "+request.getName()+ "su informacion ha sido recibida, de igual forma, lo invitamos a usar nuestro chat publico en nuestro sitio web";
         }catch (Exception errorEmailSender){
 
             return errorEmailSender.getMessage();

@@ -11,13 +11,17 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "HistoryContactInfoWebSite")
 public class ContactRequestDTO {
 
-    @JsonProperty("Nombre")
-    private String nombre;
-    @JsonProperty("Apellidos")
-    private String apellidos;
-    @JsonProperty("Telefono")
-    private int Telefono;
-    @JsonProperty("CorreoElectronico")
-    private String correoElectronico;
+    @JsonProperty("Name")
+    private String name;
+
+    @JsonProperty("Surnames")
+    private String surnames;
+
+    @JsonProperty("Phone")
+    private int phone;
+
+    @JsonProperty("Email")
+    private String email;
+
 
 }

@@ -18,16 +18,13 @@ public class QuotesDTO {
 
     @JsonProperty("_id")
     private int _id;
-    @JsonProperty("Tipo")
-    private String Tipo;
-    @JsonProperty("Cliente")
-    private String Cliente;
-    @JsonProperty("Apellidos")
-    private String Apellidos;
-    @JsonProperty("Correo")
-    private String Correo;
-    @JsonProperty("Detalles")
-    private RepuestosDTO Detalles;
-    @JsonProperty("Fecha")
-    private Date Fecha;
+
+    @JsonProperty("Type")
+    private String Type;
+
+    @JsonProperty("Details")
+    private RepuestosDTO Details;
+
+    @JsonProperty("CurrentDate")
+    private Date CurrentDate;
 }

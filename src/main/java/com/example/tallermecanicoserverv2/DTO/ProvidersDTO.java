@@ -14,12 +14,17 @@ public class ProvidersDTO {
 
     @JsonProperty("_id")
     private int _id;
-    @JsonProperty("Nombre")
-    private String Nombre;
-    @JsonProperty("Telefono")
-    private int Telefono;
-    @JsonProperty("CorreoElectronico")
-    private String CorreoElectronico;
-    @JsonProperty("TipoRepuestos")
-    private String TipoRepuestos;
+
+    @JsonProperty("Name")
+    private String name;
+
+    @JsonProperty("Phone")
+    private int phone;
+
+    @JsonProperty("Email")
+    private String email;
+
+    @JsonProperty("PartsType")
+    private String partsType;
+
 }

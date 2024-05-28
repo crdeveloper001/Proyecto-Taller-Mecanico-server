@@ -65,7 +65,7 @@ public class QuotesService implements IQuotes {
                 SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
                 Date date = new Date(); 
                 formatter.format(date) ;
-                quote.setFecha(date);
+                quote.setCurrentDate(date);
 
                 service.save(quote);
 

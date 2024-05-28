@@ -19,9 +19,10 @@ public class AuthenticationService implements IAuthentication {
     public PayloadAuthenticationDTO AuthUser(AuthenticationDTO credentials) {
         PayloadAuthenticationDTO currentPayload = new PayloadAuthenticationDTO();
         List<UsersDTO> registroUsuariosList = service.findAll();
+
         for (UsersDTO user : registroUsuariosList) {
-            if (user.getCorreoElectronico().equals(credentials.getEmail())
-                    && user.getClaveAcceso().equals(credentials.getPassword())) {
+            if (user.getEmail().equals(credentials.getEmail())
+                    && user.getPassword().equals(credentials.getPassword())) {
                         
                 currentPayload.setAuth_key("USER_AUTHORIZED");
                 currentPayload.setPayload(user);
