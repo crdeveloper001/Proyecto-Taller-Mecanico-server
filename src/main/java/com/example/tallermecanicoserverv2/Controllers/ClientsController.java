@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @CrossOrigin(allowedHeaders = "*", origins = "*")
@@ -22,15 +23,27 @@ public class ClientsController {
         return service.GetClients();
     }
 
-    @GetMapping("{name}")
-    public List<ClientsDTO> Search(@PathVariable String name) {
-        return service.SearchOneClient(name);
+    @GetMapping("/search/{name}")
+    public ResponseEntity<?> search(@PathVariable String name) {
+        try {
+            ClientsDTO result = service.SearchOneClient(name);
+
+            if (result != null) {
+                return new ResponseEntity<>(result, HttpStatus.FOUND);
+
+            }else{
+                return new ResponseEntity<String>("NOT_FOUND",HttpStatus.NOT_FOUND);
+            }
+
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An error occurred during the search.");
+        }
     }
 
     @PostMapping()
     @ResponseBody
-    public ResponseEntity<?> PostClient(@RequestBody ClientsDTO client) {
-        return new ResponseEntity<>(service.AddClient(client), HttpStatus.CREATED);
+    public ResponseEntity<String> PostClient(@RequestBody ClientsDTO client) {
+        return new ResponseEntity<>(service.AddClient(client), HttpStatus.OK);
     }
 
     @PutMapping()

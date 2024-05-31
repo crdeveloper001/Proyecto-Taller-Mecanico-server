@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ClientsService implements IClients {
@@ -40,32 +41,41 @@ public class ClientsService implements IClients {
     }
 
     @Override
-    public List<ClientsDTO> SearchOneClient(String name) {
+    public ClientsDTO SearchOneClient(String name) {
 
         try {
-
-            if (service.findClientsByName(name).isEmpty()) {
-
-                return null;
-            } else {
-                return service.findClientsByName(name);
+            List<ClientsDTO> clients = service.findAll();
+            
+            for (ClientsDTO client : clients) {
+                if (client.getName().equalsIgnoreCase(name)) {
+                    return client;
+                }else{
+                    return null;
+                }
             }
 
         } catch (Exception e) {
-            //test
-            throw e;
+            e.printStackTrace();
+           
         }
+
+        return null;
     }
 
     @Override
     public String AddClient(ClientsDTO client) {
 
+        List<ClientsDTO> current_Clients = service.findAll();
+
         try {
-            if (client.get_id() != 0 && client.getNombre() != "") {
+            if ((client.get_id() != 0) && (!client.getName().isEmpty())) {
 
-                service.save(client);
-
-                return "Cliente Agregado";
+                if(current_Clients.contains(client)){
+                    return "El cliente ya existe";
+                }else{
+                    service.save(client);
+                    return "Cliente Agregado";
+                }
 
             } else {
                 return "Verifique los datos ingresados";
