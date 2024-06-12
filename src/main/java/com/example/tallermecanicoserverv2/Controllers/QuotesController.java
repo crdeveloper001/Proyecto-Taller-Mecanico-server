@@ -23,8 +23,8 @@ public class QuotesController {
     }
 
     @GetMapping("/Search/{Cliente}")
-    public List<QuotesDTO> Search(@PathVariable String Cliente) {
-        return service.SearchOneQuotes(Cliente);
+    public List<QuotesDTO> Search(@PathVariable String cliente) {
+        return service.SearchOneQuotes(cliente);
     }
 
     @PostMapping()

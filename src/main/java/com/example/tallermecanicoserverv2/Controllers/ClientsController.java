@@ -2,21 +2,22 @@ package com.example.tallermecanicoserverv2.Controllers;
 
 import com.example.tallermecanicoserverv2.DTO.ClientsDTO;
 import com.example.tallermecanicoserverv2.Services.ClientsService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @CrossOrigin(allowedHeaders = "*", origins = "*")
 @RequestMapping("api/v1/Clients")
 public class ClientsController {
 
-    @Autowired
-    private ClientsService service;
+    private final ClientsService service;
+
+    public ClientsController(ClientsService service) {
+        this.service = service;
+    }
 
     @GetMapping()
     public List<ClientsDTO> GetClients() {
@@ -32,7 +33,7 @@ public class ClientsController {
                 return new ResponseEntity<>(result, HttpStatus.FOUND);
 
             }else{
-                return new ResponseEntity<String>("NOT_FOUND",HttpStatus.NOT_FOUND);
+                return new ResponseEntity<>("NOT_FOUND", HttpStatus.NOT_FOUND);
             }
 
         } catch (Exception e) {

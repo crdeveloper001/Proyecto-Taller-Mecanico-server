@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for proyecto-taller-mecanico-server-damp-dawn-7486 on 2024-05-03T12:50:45-06:00
+# fly.toml app configuration file generated for taller-mecanico-api-beta on 2024-06-12T17:05:17-06:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'proyecto-taller-mecanico-server-damp-dawn-7486'
+app = 'taller-mecanico-api-beta'
 primary_region = 'mia'
 
 [build]
