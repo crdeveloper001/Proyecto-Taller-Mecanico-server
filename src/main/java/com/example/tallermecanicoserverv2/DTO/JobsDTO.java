@@ -3,6 +3,7 @@ package com.example.tallermecanicoserverv2.DTO;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.Null;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
@@ -12,6 +13,7 @@ import java.util.Date;
 
 @Getter
 @Setter
+@Data
 @AllArgsConstructor
 @Document(collection = "Jobs")
 public class JobsDTO {
