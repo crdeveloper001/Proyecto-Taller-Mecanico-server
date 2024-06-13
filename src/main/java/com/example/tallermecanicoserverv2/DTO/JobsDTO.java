@@ -20,7 +20,6 @@ public class JobsDTO {
     private String _id;
     @JsonProperty("job_Name")
     private String job_Name;
-
     @JsonProperty("job_Description")
     private String job_Description;
     @JsonProperty("job_Status")

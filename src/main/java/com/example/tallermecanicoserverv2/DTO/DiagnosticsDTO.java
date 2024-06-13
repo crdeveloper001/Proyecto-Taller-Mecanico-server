@@ -1,6 +1,6 @@
 package com.example.tallermecanicoserverv2.DTO;
 
-import com.example.tallermecanicoserverv2.DTO.UtilsDTO.RepuestosDTO;
+import com.example.tallermecanicoserverv2.DTO.UtilsDTO.ReplacementDTO;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -30,6 +30,6 @@ public class DiagnosticsDTO {
     private String repairDetails;
 
     @JsonProperty("RequiredParts")
-    private RepuestosDTO requiredParts;
+    private ReplacementDTO requiredParts;
 
 }

@@ -13,13 +13,10 @@ public class ContactRequestDTO {
 
     @JsonProperty("Name")
     private String name;
-
     @JsonProperty("Surnames")
     private String surnames;
-
     @JsonProperty("Phone")
     private int phone;
-
     @JsonProperty("Email")
     private String email;
 

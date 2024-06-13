@@ -10,14 +10,12 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class RepuestosDTO {
+public class ReplacementDTO {
 
     @JsonProperty("Part")
     private String part;
-
     @JsonProperty("Quantity")
     private int quantity;
-
     @JsonProperty("Price")
     private int price;
 

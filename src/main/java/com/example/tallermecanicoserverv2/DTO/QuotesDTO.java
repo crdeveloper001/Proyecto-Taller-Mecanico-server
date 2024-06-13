@@ -1,6 +1,6 @@
 package com.example.tallermecanicoserverv2.DTO;
 
-import com.example.tallermecanicoserverv2.DTO.UtilsDTO.RepuestosDTO;
+import com.example.tallermecanicoserverv2.DTO.UtilsDTO.ReplacementDTO;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -24,7 +24,7 @@ public class QuotesDTO {
     private String Type;
 
     @JsonProperty("Details")
-    private List<RepuestosDTO> Details;
+    private List<ReplacementDTO> Details;
 
     @JsonProperty("CurrentDate")
     private Date CurrentDate;
