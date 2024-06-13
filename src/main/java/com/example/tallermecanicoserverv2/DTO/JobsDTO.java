@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
@@ -18,7 +17,6 @@ import java.util.Date;
 @Document(collection = "Jobs")
 public class JobsDTO {
 
-    @Id
     private String _id;
     @JsonProperty("job_Name")
     private String job_Name;
