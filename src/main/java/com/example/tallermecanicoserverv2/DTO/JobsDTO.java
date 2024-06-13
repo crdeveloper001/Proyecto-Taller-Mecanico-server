@@ -16,7 +16,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Document(collection = "Jobs")
 public class JobsDTO {
-
+    @JsonProperty("_id")
     private String _id;
     @JsonProperty("job_Name")
     private String job_Name;
