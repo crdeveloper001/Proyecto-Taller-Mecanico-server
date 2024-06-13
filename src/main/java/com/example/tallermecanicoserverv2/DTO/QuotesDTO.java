@@ -6,6 +6,7 @@ import lombok.*;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
+import java.util.List;
 
 
 @Getter
@@ -23,7 +24,7 @@ public class QuotesDTO {
     private String Type;
 
     @JsonProperty("Details")
-    private RepuestosDTO Details;
+    private List<RepuestosDTO> Details;
 
     @JsonProperty("CurrentDate")
     private Date CurrentDate;
