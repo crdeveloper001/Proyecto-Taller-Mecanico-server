@@ -51,7 +51,7 @@ public class JobsService implements IJobs {
                 return jobsByStatus;
             } else {
                 for (JobsDTO currentJob : currentJobs) {
-                    if (currentJob.getJob_Status().equals(jobStatus)) {
+                    if (currentJob.getJob_Status().equalsIgnoreCase(jobStatus)) {
                         jobsByStatus.add(currentJob);
                     }
                 }
