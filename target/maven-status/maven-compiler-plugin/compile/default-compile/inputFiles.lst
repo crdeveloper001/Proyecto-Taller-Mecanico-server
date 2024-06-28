@@ -1,53 +1,53 @@
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/DTO/AuthenticationDTO.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Services/JobsService.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Services/DiagnosticsService.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IProviders.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IClients.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Controllers/AuthorizationController.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Repositories/ClientsRepositories.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/DTO/PayloadAuthenticationDTO.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Repositories/JobsRepositories.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/DTO/InventoryDTO.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Repositories/DiagnosticsRepositories.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Controllers/TallerServerController.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Repositories/UsersRepositories.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Repositories/QuotesRepositories.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Services/VehiclesService.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Controllers/JobsController.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Services/AuthenticationService.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Controllers/ContactInfoEmailController.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IJobs.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/DTO/JobsDTO.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Repositories/ProvidersRepositories.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Controllers/ProvidersController.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IQuotes.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Controllers/ClientsController.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IContactRequest.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IDiagnostics.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IVehicles.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Services/UsersService.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IInventory.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Services/QuotesService.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/DTO/ProvidersDTO.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Services/ClientsService.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/DTO/DiagnosticsDTO.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Services/InventoryService.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Services/ContactInfoServices.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Repositories/InventoryRepositories.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Repositories/ContactRequestRepositories.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Controllers/UsersController.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IAuthentication.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/DTO/QuotesDTO.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/DTO/UtilsDTO/ContactRequestDTO.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Controllers/InventoryController.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Repositories/VehiclesRepositories.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IUsers.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/DTO/ClientsDTO.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Controllers/VehiclesController.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Controllers/QuotesController.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/DTO/VehiclesDTO.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Controllers/DiagnosticsController.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/DTO/UsersDTO.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/TallerMecanicoServerv2Application.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/DTO/UtilsDTO/ReplacementDTO.java
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/TALLER MECANICO APP/Proyecto-Taller-Mecanico-server/src/main/java/com/example/tallermecanicoserverv2/Services/ProvidersService.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Repositories/InventoryRepositories.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IClients.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IProviders.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/DTO/JobsDTO.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/DTO/InventoryDTO.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Controllers/AuthorizationController.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/DTO/AuthenticationDTO.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Repositories/JobsRepositories.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Controllers/ClientsController.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Services/AuthenticationService.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/DTO/QuotesDTO.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IAuthentication.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Services/JobsService.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Services/DiagnosticsService.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/TallerMecanicoServerv2Application.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Controllers/UsersController.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/DTO/UtilsDTO/ReplacementDTO.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Controllers/QuotesController.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Repositories/ClientsRepositories.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Controllers/JobsController.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Controllers/InventoryController.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IInventory.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Repositories/VehiclesRepositories.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/DTO/ClientsDTO.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Services/ClientsService.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IQuotes.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IUsers.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Controllers/DiagnosticsController.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IVehicles.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/DTO/VehiclesDTO.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Repositories/QuotesRepositories.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IContactRequest.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/DTO/DiagnosticsDTO.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/DTO/PayloadAuthenticationDTO.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IDiagnostics.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Services/UsersService.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Services/InventoryService.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Controllers/TallerServerController.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Repositories/ContactRequestRepositories.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/DTO/ProvidersDTO.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Repositories/UsersRepositories.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/DTO/UsersDTO.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Controllers/ProvidersController.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Services/ProvidersService.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/DTO/UtilsDTO/ContactRequestDTO.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Controllers/ContactInfoEmailController.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Services/VehiclesService.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Repositories/ProvidersRepositories.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Services/QuotesService.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Services/ContactInfoServices.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Interfaces/IJobs.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Controllers/VehiclesController.java
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/Taller Mecanico App/Proyecto-Taller-Mecanico-Server/src/main/java/com/example/tallermecanicoserverv2/Repositories/DiagnosticsRepositories.java
