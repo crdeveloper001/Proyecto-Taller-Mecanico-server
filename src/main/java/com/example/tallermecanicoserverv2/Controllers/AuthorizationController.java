@@ -1,7 +1,7 @@
 package com.example.tallermecanicoserverv2.Controllers;
 
-import com.example.tallermecanicoserverv2.DTO.AuthenticationDTO;
-import com.example.tallermecanicoserverv2.DTO.PayloadAuthenticationDTO;
+import com.example.tallermecanicoserverv2.DTO.Authorization.AuthenticationDTO;
+import com.example.tallermecanicoserverv2.DTO.Authorization.PayloadAuthenticationDTO;
 import com.example.tallermecanicoserverv2.Services.AuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

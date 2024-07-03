@@ -1,6 +1,6 @@
 package com.example.tallermecanicoserverv2.Repositories;
 
-import com.example.tallermecanicoserverv2.DTO.InventoryDTO;
+import com.example.tallermecanicoserverv2.DTO.Inventory.InventoryDTO;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;

@@ -1,6 +1,6 @@
 package com.example.tallermecanicoserverv2.Interfaces;
 
-import com.example.tallermecanicoserverv2.DTO.ProvidersDTO;
+import com.example.tallermecanicoserverv2.DTO.Providers.ProvidersDTO;
 
 import java.util.List;
 

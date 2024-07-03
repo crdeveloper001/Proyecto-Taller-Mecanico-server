@@ -1,6 +1,6 @@
 package com.example.tallermecanicoserverv2.Controllers;
 
-import com.example.tallermecanicoserverv2.DTO.UsersDTO;
+import com.example.tallermecanicoserverv2.DTO.Users.UsersDTO;
 import com.example.tallermecanicoserverv2.Services.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

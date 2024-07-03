@@ -1,6 +1,6 @@
 package com.example.tallermecanicoserverv2.Controllers;
 
-import com.example.tallermecanicoserverv2.DTO.ClientsDTO;
+import com.example.tallermecanicoserverv2.DTO.ClientsInformation.ClientsDTO;
 import com.example.tallermecanicoserverv2.Services.ClientsService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,13 +1,12 @@
 package com.example.tallermecanicoserverv2.Services;
 
-import com.example.tallermecanicoserverv2.DTO.ClientsDTO;
+import com.example.tallermecanicoserverv2.DTO.ClientsInformation.ClientsDTO;
 import com.example.tallermecanicoserverv2.Interfaces.IClients;
 import com.example.tallermecanicoserverv2.Repositories.ClientsRepositories;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class ClientsService implements IClients {

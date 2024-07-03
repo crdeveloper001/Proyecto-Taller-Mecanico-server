@@ -1,6 +1,6 @@
 package com.example.tallermecanicoserverv2.Services;
 
-import com.example.tallermecanicoserverv2.DTO.InventoryDTO;
+import com.example.tallermecanicoserverv2.DTO.Inventory.InventoryDTO;
 import com.example.tallermecanicoserverv2.Interfaces.IInventory;
 import com.example.tallermecanicoserverv2.Repositories.InventoryRepositories;
 import org.springframework.beans.factory.annotation.Autowired;
