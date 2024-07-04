@@ -37,7 +37,7 @@ public class JobsDTO {
     private String job_Location;
     @JsonProperty("job_Assigned")
     private String job_Assigned;
-    @JsonProperty("vehicleInformation")
-    private VehiclesDTO vehicleInformation;
+    @JsonProperty("ClientInformation")
+    private ClientsDTO ClientInformation;
 
 }

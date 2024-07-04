@@ -44,6 +44,7 @@ public class ClientsController {
     @PostMapping()
     @ResponseBody
     public ResponseEntity<String> PostClient(@RequestBody ClientsDTO client) {
+        client.getVehicleDetails().set_id(client.get_id());
         return new ResponseEntity<>(service.AddClient(client), HttpStatus.OK);
     }
 

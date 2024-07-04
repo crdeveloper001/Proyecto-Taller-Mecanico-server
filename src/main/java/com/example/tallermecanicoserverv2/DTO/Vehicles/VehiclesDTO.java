@@ -19,6 +19,9 @@ public class VehiclesDTO {
     @JsonProperty("Brand")
     private String Brand;
 
+    @JsonProperty("Model")
+    private String Model;
+
     @JsonProperty("Type")
     private String Type;
 
@@ -27,11 +30,5 @@ public class VehiclesDTO {
 
     @JsonProperty("RegistrationPlate")
     private String RegistrationPlate;
-
-    @JsonProperty("CurrentOwner")
-    private ClientsDTO CurrentOwner;
-
-    @JsonProperty("CurrentState")
-    private String CurrentState;
 
 }

@@ -1,5 +1,6 @@
 package com.example.tallermecanicoserverv2.DTO.ClientsInformation;
 
+import com.example.tallermecanicoserverv2.DTO.Vehicles.VehiclesDTO;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -24,10 +25,6 @@ public class ClientsDTO {
     private int phone;
     @JsonProperty("CurrentAddress")
     private String currentAddress;
-    @JsonProperty("City")
-    private String city;
-    @JsonProperty("State")
-    private String state;
-    @JsonProperty("Zipcode")
-    private int zipcode;
+    @JsonProperty("VehicleDetails")
+    private VehiclesDTO VehicleDetails;
 }
