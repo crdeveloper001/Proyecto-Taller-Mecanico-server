@@ -79,7 +79,7 @@ public class UsersService implements IUsers {
 
             if (service.existsById(update.get_id())){
                 service.save(update);
-
+                update.setPassword("");
                 return update;
             }else{
                 return null;

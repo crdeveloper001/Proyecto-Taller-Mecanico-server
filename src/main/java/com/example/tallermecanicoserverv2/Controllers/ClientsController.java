@@ -27,13 +27,13 @@ public class ClientsController {
     @GetMapping("/search/{name}")
     public ResponseEntity<?> search(@PathVariable String name) {
         try {
-            ClientsDTO result = service.SearchOneClient(name);
+            List<ClientsDTO> result = service.SearchOneClient(name);
 
             if (result != null) {
-                return new ResponseEntity<>(result, HttpStatus.FOUND);
+                return new ResponseEntity<List<ClientsDTO>>(result, HttpStatus.OK);
 
             }else{
-                return new ResponseEntity<>("NOT_FOUND", HttpStatus.NOT_FOUND);
+                return new ResponseEntity<String>("NOT_FOUND", HttpStatus.NOT_FOUND);
             }
 
         } catch (Exception e) {

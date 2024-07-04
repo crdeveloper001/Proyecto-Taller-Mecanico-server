@@ -6,6 +6,7 @@ import com.example.tallermecanicoserverv2.Repositories.ClientsRepositories;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -40,26 +41,24 @@ public class ClientsService implements IClients {
     }
 
     @Override
-    public ClientsDTO SearchOneClient(String name) {
+    public List<ClientsDTO> SearchOneClient(String name) {
+        List<ClientsDTO> matchedClients = new ArrayList<>();
 
         try {
             List<ClientsDTO> clients = service.findAll();
-            
+
             for (ClientsDTO client : clients) {
-                if (client.getName().equalsIgnoreCase(name)) {
-                    return client;
-                }else{
-                    return null;
+                if (client.getName().toLowerCase().contains(name.toLowerCase())) {
+                    matchedClients.add(client);
                 }
             }
-
         } catch (Exception e) {
             e.printStackTrace();
-           
         }
 
-        return null;
+        return matchedClients;
     }
+
 
     @Override
     public String AddClient(ClientsDTO client) {
