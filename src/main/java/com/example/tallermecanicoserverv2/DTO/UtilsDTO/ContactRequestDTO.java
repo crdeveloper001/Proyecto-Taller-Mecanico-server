@@ -19,6 +19,6 @@ public class ContactRequestDTO {
     private int phone;
     @JsonProperty("Email")
     private String email;
-
-
+    @JsonProperty("Message")
+    private String message;
 }

@@ -15,14 +15,9 @@ public class ContactInfoEmailController {
     @Autowired
     private ContactInfoServices service;
 
-    @GetMapping()
-    public ResponseEntity<?>GetHistoryEmails(){
-
-        return new ResponseEntity<>(service.GetHistoryRequests(), HttpStatus.OK);
-    }
     @PostMapping()
     @ResponseBody()
     public ResponseEntity<?>PostEmailContact(@RequestBody ContactRequestDTO info){
-        return new ResponseEntity<>(service.SendContactInfoEmail(info),HttpStatus.CREATED);
+        return new ResponseEntity<>(service.sendContactInfoEmail(info),HttpStatus.OK);
     }
 }
