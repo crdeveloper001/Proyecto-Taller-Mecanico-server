@@ -27,4 +27,8 @@ public class ClientsDTO {
     private String currentAddress;
     @JsonProperty("VehicleDetails")
     private VehiclesDTO VehicleDetails;
+
+    public ClientsDTO(String claudio) {
+
+    }
 }

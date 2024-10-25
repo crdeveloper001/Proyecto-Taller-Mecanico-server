@@ -1,6 +1,5 @@
 package com.example.tallermecanicoserverv2.DTO.Vehicles;
 
-import com.example.tallermecanicoserverv2.DTO.ClientsInformation.ClientsDTO;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -10,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collection="Vehicles")
+@Document(collection = "Vehicles")
 public class VehiclesDTO {
 
     @JsonProperty("_id")

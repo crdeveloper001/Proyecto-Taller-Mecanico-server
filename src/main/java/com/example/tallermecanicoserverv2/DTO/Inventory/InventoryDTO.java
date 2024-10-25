@@ -9,11 +9,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collection="Inventory")
+@Document(collection = "Inventory")
 public class InventoryDTO {
 
     @JsonProperty("_id")
-    private int _id;
+    private String _id;
 
     @JsonProperty("Name")
     private String name;
@@ -27,4 +27,9 @@ public class InventoryDTO {
     @JsonProperty("Availability")
     private String availability;
 
+    @JsonProperty("Provider")
+    private String provider;
+
+    @JsonProperty("ProviderContact")
+    private String providerContact;
 }

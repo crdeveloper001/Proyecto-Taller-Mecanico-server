@@ -21,7 +21,6 @@ public class InventoryService implements IInventory {
     public InventoryService() {
     }
 
-
     @Override
     public List<InventoryDTO> GetInventory() {
         try {
@@ -42,7 +41,7 @@ public class InventoryService implements IInventory {
 
     @Override
     public List<InventoryDTO> SearchOneInventory(String Nombre) {
-        
+
         try {
 
             if (Nombre == "") {
@@ -62,7 +61,7 @@ public class InventoryService implements IInventory {
     public String AddInventory(InventoryDTO item) {
         try {
             if (item != null) {
-
+                System.out.println(item);
                 service.save(item);
 
                 return "Item Agregado";
@@ -77,17 +76,17 @@ public class InventoryService implements IInventory {
 
     @Override
     public InventoryDTO UpdateInventory(InventoryDTO update) {
-        try{
+        try {
 
-            if (service.existsById(update.get_id())){
+            if (update.get_id() != null) {
                 service.save(update);
 
                 return update;
-            }else{
+            } else {
                 return null;
             }
 
-        }catch (Exception error){
+        } catch (Exception error) {
 
             throw error;
         }
@@ -95,21 +94,21 @@ public class InventoryService implements IInventory {
 
     @Override
     public String DeleteInventory(int id) {
-        try{
+        try {
 
-            if (service.existsById(id)){
+            if (service.existsById(id)) {
 
                 service.deleteById(id);
 
                 return "Item Eliminado";
-            }else{
+            } else {
 
                 return "Item no encontrado";
             }
 
-        }catch (Exception errorDeleteShop){
+        } catch (Exception errorDeleteShop) {
 
-            return  errorDeleteShop.getMessage();
+            return errorDeleteShop.getMessage();
         }
     }
 }

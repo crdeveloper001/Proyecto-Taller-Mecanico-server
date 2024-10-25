@@ -10,4 +10,9 @@ class TallerMecanicoServerv2ApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test
+	void requestInformation(){
+
+	}
+
 }

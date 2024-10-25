@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ContactInfoServices {
 
+    @SuppressWarnings("unused")
     @Autowired
     private ContactRequestRepositories service;
 
@@ -33,12 +34,13 @@ public class ContactInfoServices {
                     "Nombre del Cliente: " + request.getName() + "\n" +
                     "Apellidos: " + request.getEmail() + "\n" +
                     "Número de Teléfono: " + request.getPhone() + "\n" +
-                    "Mensaje: "+ request.getMessage()+"\n"+
+                    "Mensaje: " + request.getMessage() + "\n" +
                     "-----------------------------------------------------------------------------------");
 
             emailSender.send(message);
 
-            return "¡Muchas gracias por contactarnos! " + request.getName() + ", su información ha sido recibida. De igual forma, lo invitamos a usar nuestro chat público en nuestro sitio web.";
+            return "¡Muchas gracias por contactarnos! " + request.getName()
+                    + ", su información ha sido recibida. De igual forma, lo invitamos a usar nuestro chat público en nuestro sitio web.";
         } catch (Exception errorEmailSender) {
             return "Error al enviar el correo: " + errorEmailSender.getMessage();
         }

@@ -1,7 +1,6 @@
 package com.example.tallermecanicoserverv2.DTO.Jobs;
 
 import com.example.tallermecanicoserverv2.DTO.ClientsInformation.ClientsDTO;
-import com.example.tallermecanicoserverv2.DTO.Vehicles.VehiclesDTO;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.Null;
 import lombok.AllArgsConstructor;
