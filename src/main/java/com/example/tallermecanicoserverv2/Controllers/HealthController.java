@@ -12,7 +12,7 @@ import java.util.Map;
 
 @RestController
 @CrossOrigin(allowedHeaders = "*", origins = "*")
-@RequestMapping("api/v1/APIHealth")
+@RequestMapping("api/v1/Health")
 public class HealthController {
 
     @GetMapping()
