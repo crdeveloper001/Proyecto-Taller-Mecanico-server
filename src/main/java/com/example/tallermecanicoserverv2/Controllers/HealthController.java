@@ -1,5 +1,6 @@
 package com.example.tallermecanicoserverv2.Controllers;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,11 +16,11 @@ import java.util.Map;
 public class HealthController {
 
     @GetMapping()
-    public Map<String, Object> getHealth() {
+    public ResponseEntity<?> getHealth() {
         Map<String, Object> response = new HashMap<>();
         response.put("status", "UP");
         response.put("timestamp", LocalDateTime.now());
         response.put("service", "TallerMecanico API");
-        return response;
+        return new ResponseEntity<>(response, org.springframework.http.HttpStatus.OK);
     }
 }
