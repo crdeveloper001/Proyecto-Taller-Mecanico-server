@@ -14,7 +14,7 @@ import java.util.Map;
 @RequestMapping("api/v1/APIHealth")
 public class HealthController {
 
-    @GetMapping("/status")
+    @GetMapping()
     public Map<String, Object> getHealth() {
         Map<String, Object> response = new HashMap<>();
         response.put("status", "UP");
